@@ -28,14 +28,23 @@ public class Main {
         public static void allQueue(){
             for (int i = 0; i < queue.size(); i++)
             {
-                System.out.println(queue.get(i));
+                System.out.println("Этаж " + queue.get(i));
             }
+        }
+        public static void drivingTime(){
+        int sek = 0;
+            for (int i = 0; i < queue.size()-1; i++)
+            {
+                sek =sek + Math.abs(queue.get(i)-queue.get(i+1))*5+10;
+            }
+            System.out.println(sek + " секунд");
         }
 
 
     public static void main(String[] args) {
 	menu();
     allQueue();
+    drivingTime();
 
     }
 }
