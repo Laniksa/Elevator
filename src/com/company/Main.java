@@ -24,13 +24,18 @@ public class Main {
             }
 
             //Дополнительные проверки
-
-
+        }
+        public static void allQueue(){
+            for (int i = 0; i < queue.size(); i++)
+            {
+                System.out.println(queue.get(i));
+            }
         }
 
 
     public static void main(String[] args) {
 	menu();
+    allQueue();
 
     }
 }
